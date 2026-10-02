@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정후 펭귄</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .content-container {
+            height: 300vh; /* 긴 스크롤 유도 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 100px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        /* 퉁퉁퉁 사후르 회전 애니메이션 요소 */
+        .sahur-img {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            animation: rotateSahur 4s linear infinite;
+        }
+
+        @keyframes rotateSahur {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <h1>예준이는 천재</h1>
+        <h1 style="margin-top: 300px;">서준이는 잘생김</h1>
+        <h1 style="margin-top: 300px;">정후는 펭귄</h1>
+    </div>
+
+    <!-- 웹페이지 곳곳에 배치된 회전하는 퉁퉁퉁 사후르 이미지 -->
+    <img src="https://tse3.mm.bing.net/th/id/OIP.gNhLU5T3MHtf42ahZz68FwHaH2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="sahur-img" style="top: 100px; left: 10%;">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.gNhLU5T3MHtf42ahZz68FwHaH2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="sahur-img" style="top: 400px; right: 10%; animation-direction: reverse;">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.gNhLU5T3MHtf42ahZz68FwHaH2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="sahur-img" style="top: 800px; left: 20%;">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.gNhLU5T3MHtf42ahZz68FwHaH2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="sahur-img" style="top: 1200px; right: 20%; animation-direction: reverse;">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.gNhLU5T3MHtf42ahZz68FwHaH2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="sahur-img" style="top: 1600px; left: 15%;">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.gNhLU5T3MHtf42ahZz68FwHaH2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="sahur-img" style="top: 2000px; right: 15%;">
+
+</body>
+</html>
